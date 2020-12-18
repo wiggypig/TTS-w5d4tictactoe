@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+h1, p {
+  font-family: Lato;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+/* handles the Board */
+.boardRow:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+/* Square */
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  float: left;
+  font-size: 25px;
+  line-height: 34px;
+  height: 40px;
+  margin-right: 1px;
+  margin-top: 1px;
+  padding: 0;
+  text-align: center;
+  width: 45px;
+  font-weight: bold;  
+  font-family: 'Tangerine', cursive;
+}
+
+.square:focus {
+  outline: none;
+  background: rgba(244, 247, 218, 0.500);
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
